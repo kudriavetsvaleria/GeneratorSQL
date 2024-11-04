@@ -54,7 +54,7 @@ namespace GeneratorSQL
                 if (GenerateBalanceCheckBox.IsChecked == true)
                     sqlBuilder.Append($"{GenerateRandomBalance()}, ");
 
-                sqlBuilder.Length -= 2; // Remove last comma and space
+                sqlBuilder.Length -= 2;
                 sqlBuilder.Append(i == rowCount - 1 ? ");" : "),\n");
             }
 
