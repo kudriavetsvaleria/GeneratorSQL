@@ -1,0 +1,47 @@
+﻿<Window x:Class="GeneratorSQL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SQL Data Generator" Height="400" Width="600">
+    <Grid Margin="10">
+        <StackPanel>
+            <Grid Margin="0,5">
+                <TextBox x:Name="TableNameTextBox" TextChanged="TableNameTextBox_TextChanged"/>
+                <TextBlock x:Name="TableNamePlaceholder" Text="Table Name" Foreground="Gray" 
+                           IsHitTestVisible="False" Margin="5,0,0,0"
+                           VerticalAlignment="Center" Visibility="Visible"/>
+            </Grid>
+
+            <Grid Margin="0,5">
+                <TextBox x:Name="ColumnsTextBox" TextChanged="ColumnsTextBox_TextChanged"/>
+                <TextBlock x:Name="ColumnsPlaceholder" Text="Columns (comma-separated)" Foreground="Gray" 
+                           IsHitTestVisible="False" Margin="5,0,0,0"
+                           VerticalAlignment="Center" Visibility="Visible"/>
+            </Grid>
+
+            <Grid Margin="0,5">
+                <TextBox x:Name="RowCountTextBox" TextChanged="RowCountTextBox_TextChanged"/>
+                <TextBlock x:Name="RowCountPlaceholder" Text="Number of Rows" Foreground="Gray" 
+                           IsHitTestVisible="False" Margin="5,0,0,0"
+                           VerticalAlignment="Center" Visibility="Visible"/>
+            </Grid>
+
+            <StackPanel Orientation="Horizontal">
+                <CheckBox x:Name="GenerateIDCheckBox" Content="ID" />
+                <CheckBox x:Name="GenerateNameCheckBox" Content="Name"/>
+                <CheckBox x:Name="GenerateSurnameCheckBox" Content="Surname"/>
+                <CheckBox x:Name="GenerateDateCheckBox" Content="Date"/>
+                <CheckBox x:Name="GenerateEmailCheckBox" Content="Email"/>
+                <CheckBox x:Name="GenerateCountryCheckBox" Content="Country"/>
+                <CheckBox x:Name="GenerateBalanceCheckBox" Content="Balance"/>
+            </StackPanel>
+
+            <Button Content="Generate SQL" Click="OnGenerateSqlClick" Margin="0,10"/>
+
+            <TextBox x:Name="SqlOutputTextBox" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="200"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="438,147,0,145">
+            <Button Content="Copy to Clipboard" Click="OnCopyToClipboardClick"/>
+        </StackPanel>
+    </Grid>
+</Window>
