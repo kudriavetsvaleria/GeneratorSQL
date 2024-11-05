@@ -20,46 +20,69 @@ namespace GeneratorSQL
             string columns = ColumnsTextBox.Text;
             int rowCount = int.TryParse(RowCountTextBox.Text, out var count) ? count : 0;
 
-            if (rowCount <= 0 || string.IsNullOrWhiteSpace(tableName) || string.IsNullOrWhiteSpace(columns))
+            if (rowCount <= 0)
             {
-                MessageBox.Show("Please enter a valid table name, columns, and row count.");
+                MessageBox.Show("Please enter a valid row count.");
                 return;
             }
 
-            StringBuilder sqlBuilder = new StringBuilder();
-            sqlBuilder.AppendLine($"INSERT INTO {tableName} ({columns}) VALUES");
+            StringBuilder outputBuilder = new StringBuilder();
+
+            // Проверка: если имя таблицы и колонки не введены, генерируем данные без SQL-формата
+            bool generateSqlFormat = !string.IsNullOrWhiteSpace(tableName) && !string.IsNullOrWhiteSpace(columns);
+            bool includeCommas = IncludeCommasCheckBox.IsChecked == true;
+
+            if (generateSqlFormat)
+            {
+                outputBuilder.AppendLine($"INSERT INTO {tableName} ({columns}) VALUES");
+            }
 
             for (int i = 0; i < rowCount; i++)
             {
-                sqlBuilder.Append("(");
+                if (generateSqlFormat)
+                {
+                    outputBuilder.Append("(");
+                }
 
+                // Генерация данных с учетом запятых
                 if (GenerateIDCheckBox.IsChecked == true)
-                    sqlBuilder.Append($"{i + 1}, ");
+                    outputBuilder.Append($"{i + 1}{(includeCommas ? ", " : " ")}");
 
                 if (GenerateNameCheckBox.IsChecked == true)
-                    sqlBuilder.Append($"'{GenerateRandomName()}', ");
+                    outputBuilder.Append($"'{GenerateRandomName()}'{(includeCommas ? ", " : " ")}");
 
                 if (GenerateSurnameCheckBox.IsChecked == true)
-                    sqlBuilder.Append($"'{GenerateRandomSurname()}', ");
+                    outputBuilder.Append($"'{GenerateRandomSurname()}'{(includeCommas ? ", " : " ")}");
 
                 if (GenerateDateCheckBox.IsChecked == true)
-                    sqlBuilder.Append($"'{GenerateRandomDate(new DateTime(1980, 1, 1), DateTime.Now):yyyy-MM-dd}', ");
+                    outputBuilder.Append($"'{GenerateRandomDate(new DateTime(1980, 1, 1), DateTime.Now):yyyy-MM-dd}'{(includeCommas ? ", " : " ")}");
 
                 if (GenerateEmailCheckBox.IsChecked == true)
-                    sqlBuilder.Append($"'{GenerateRandomEmail()}', ");
+                    outputBuilder.Append($"'{GenerateRandomEmail()}'{(includeCommas ? ", " : " ")}");
 
                 if (GenerateCountryCheckBox.IsChecked == true)
-                    sqlBuilder.Append($"'{GenerateRandomCountry()}', ");
+                    outputBuilder.Append($"'{GenerateRandomCountry()}'{(includeCommas ? ", " : " ")}");
 
                 if (GenerateBalanceCheckBox.IsChecked == true)
-                    sqlBuilder.Append($"{GenerateRandomBalance()}, ");
+                    outputBuilder.Append($"{GenerateRandomBalance()}{(includeCommas ? ", " : " ")}");
 
-                sqlBuilder.Length -= 2;
-                sqlBuilder.Append(i == rowCount - 1 ? ");" : "),\n");
+                // Убираем последнюю запятую или пробел, если данные сгенерированы
+                outputBuilder.Length -= includeCommas ? 2 : 1;
+
+                if (generateSqlFormat)
+                {
+                    outputBuilder.Append(i == rowCount - 1 ? ");" : "),\n");
+                }
+                else
+                {
+                    outputBuilder.AppendLine(); // Простой перенос строки для списка данных
+                }
             }
 
-            SqlOutputTextBox.Text = sqlBuilder.ToString();
+            SqlOutputTextBox.Text = outputBuilder.ToString();
         }
+
+
 
         private string GenerateRandomName()
         {

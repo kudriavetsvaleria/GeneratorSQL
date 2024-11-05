@@ -26,13 +26,14 @@
             </Grid>
 
             <StackPanel Orientation="Horizontal">
-                <CheckBox x:Name="GenerateIDCheckBox" Content="ID" />
-                <CheckBox x:Name="GenerateNameCheckBox" Content="Name"/>
-                <CheckBox x:Name="GenerateSurnameCheckBox" Content="Surname"/>
-                <CheckBox x:Name="GenerateDateCheckBox" Content="Date"/>
-                <CheckBox x:Name="GenerateEmailCheckBox" Content="Email"/>
-                <CheckBox x:Name="GenerateCountryCheckBox" Content="Country"/>
-                <CheckBox x:Name="GenerateBalanceCheckBox" Content="Balance"/>
+                <CheckBox x:Name="GenerateIDCheckBox" Content="ID" Margin="5,0,10,0"/>
+                <CheckBox x:Name="GenerateNameCheckBox" Content="Name" Margin="0,0,10,0"/>
+                <CheckBox x:Name="GenerateSurnameCheckBox" Content="Surname" Margin="0,0,10,0"/>
+                <CheckBox x:Name="GenerateDateCheckBox" Content="Date" Margin="0,0,10,0"/>
+                <CheckBox x:Name="GenerateEmailCheckBox" Content="Email" Margin="0,0,10,0"/>
+                <CheckBox x:Name="GenerateCountryCheckBox" Content="Country" Margin="0,0,10,0"/>
+                <CheckBox x:Name="GenerateBalanceCheckBox" Content="Balance" Margin="0,0,10,0"/>
+                <CheckBox x:Name="IncludeCommasCheckBox" Content="comma" Margin="60,0,0,0" />
             </StackPanel>
 
             <Button Content="Generate SQL" Click="OnGenerateSqlClick" Margin="0,10"/>
