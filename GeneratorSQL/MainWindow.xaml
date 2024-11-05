@@ -15,7 +15,7 @@
 
                 <Grid Margin="0,5">
                     <TextBox x:Name="ColumnsTextBox" TextChanged="ColumnsTextBox_TextChanged"/>
-                    <TextBlock x:Name="ColumnsPlaceholder" Text="Columns (comma-separated)" Foreground="Gray" 
+                    <TextBlock x:Name="ColumnsPlaceholder" Text="Columns" Foreground="Gray" 
                                IsHitTestVisible="False" Margin="5,0,0,0"
                                VerticalAlignment="Center" Visibility="Visible"/>
                 </Grid>
@@ -69,8 +69,8 @@
 
                 <!-- Buttons and Output -->
                 <Button Content="Generate SQL" Click="OnGenerateSqlClick" Margin="0,20,0,0"/>
-                <TextBox x:Name="SqlOutputTextBox" IsReadOnly="True" TextWrapping="Wrap" 
-                         Margin="0,20,0,0" VerticalScrollBarVisibility="Auto" Height="210"/>
+                <TextBox x:Name="SqlOutputTextBox" IsReadOnly="True" TextWrapping="NoWrap" Width="720" 
+                         Margin="0,20,0,0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="210"/>
             </StackPanel>
 
             <Button Content="Copy" Click="OnCopyToClipboardClick" HorizontalAlignment="Right" 
