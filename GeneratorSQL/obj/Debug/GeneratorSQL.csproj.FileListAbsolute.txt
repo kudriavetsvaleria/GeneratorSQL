@@ -12,6 +12,3 @@ E:\GeneratorSQL\GeneratorSQL\bin\Debug\GeneratorSQL.exe
 E:\GeneratorSQL\GeneratorSQL\bin\Debug\GeneratorSQL.pdb
 E:\GeneratorSQL\GeneratorSQL\obj\Debug\GeneratorSQL.exe
 E:\GeneratorSQL\GeneratorSQL\obj\Debug\GeneratorSQL.pdb
-E:\GeneratorSQL\GeneratorSQL\bin\Debug\Newtonsoft.Json.dll
-E:\GeneratorSQL\GeneratorSQL\bin\Debug\Newtonsoft.Json.xml
-E:\GeneratorSQL\GeneratorSQL\obj\Debug\Generato.3FF090F5.Up2Date

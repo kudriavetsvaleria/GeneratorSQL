@@ -28,9 +28,10 @@ namespace GeneratorSQL
 
             StringBuilder outputBuilder = new StringBuilder();
 
-            // Проверка: если имя таблицы и колонки не введены, генерируем данные без SQL-формата
             bool generateSqlFormat = !string.IsNullOrWhiteSpace(tableName) && !string.IsNullOrWhiteSpace(columns);
             bool includeCommas = IncludeCommasCheckBox.IsChecked == true;
+            bool useDoubleQuotes = UseDoubleQuotesCheckBox.IsChecked == true;
+            string quote = useDoubleQuotes ? "\"" : "'";
 
             if (generateSqlFormat)
             {
@@ -44,29 +45,66 @@ namespace GeneratorSQL
                     outputBuilder.Append("(");
                 }
 
-                // Генерация данных с учетом запятых
                 if (GenerateIDCheckBox.IsChecked == true)
                     outputBuilder.Append($"{i + 1}{(includeCommas ? ", " : " ")}");
 
                 if (GenerateNameCheckBox.IsChecked == true)
-                    outputBuilder.Append($"'{GenerateRandomName()}'{(includeCommas ? ", " : " ")}");
+                    outputBuilder.Append($"{quote}{GenerateRandomName()}{quote}{(includeCommas ? ", " : " ")}");
 
                 if (GenerateSurnameCheckBox.IsChecked == true)
-                    outputBuilder.Append($"'{GenerateRandomSurname()}'{(includeCommas ? ", " : " ")}");
+                    outputBuilder.Append($"{quote}{GenerateRandomSurname()}{quote}{(includeCommas ? ", " : " ")}");
 
-                if (GenerateDateCheckBox.IsChecked == true)
-                    outputBuilder.Append($"'{GenerateRandomDate(new DateTime(1980, 1, 1), DateTime.Now):yyyy-MM-dd}'{(includeCommas ? ", " : " ")}");
+                if (GenerateMiddleNameCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomMiddleName()}{quote}{(includeCommas ? ", " : " ")}");
 
-                if (GenerateEmailCheckBox.IsChecked == true)
-                    outputBuilder.Append($"'{GenerateRandomEmail()}'{(includeCommas ? ", " : " ")}");
+                if (GenerateGenderCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomGender()}{quote}{(includeCommas ? ", " : " ")}");
 
-                if (GenerateCountryCheckBox.IsChecked == true)
-                    outputBuilder.Append($"'{GenerateRandomCountry()}'{(includeCommas ? ", " : " ")}");
+                if (GenerateAgeCheckBox.IsChecked == true)
+                {
+                    int age = GenerateRandomAge();
+                    outputBuilder.Append($"{age}{(includeCommas ? ", " : " ")}");
 
-                if (GenerateBalanceCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{GenerateRandomBalance()}{(includeCommas ? ", " : " ")}");
+                    if (GenerateBirthDateCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateBirthDateFromAge(age):yyyy-MM-dd}{quote}{(includeCommas ? ", " : " ")}");
+                }
 
-                // Убираем последнюю запятую или пробел, если данные сгенерированы
+                if (GenerateCityCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomCity()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateAddressCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomAddress()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GeneratePhoneNumberCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomPhoneNumber()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateProfessionCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomProfession()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateCompanyCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomCompany()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateStatusCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomStatus()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateEducationLevelCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomEducationLevel()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateHobbyCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomHobby()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateRelationshipStatusCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomRelationshipStatus()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateIPAddressCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomIPAddress()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateUserCategoryCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{quote}{GenerateRandomUserCategory()}{quote}{(includeCommas ? ", " : " ")}");
+
+                if (GenerateRatingCheckBox.IsChecked == true)
+                    outputBuilder.Append($"{GenerateRandomRating()}{(includeCommas ? ", " : " ")}");
+
                 outputBuilder.Length -= includeCommas ? 2 : 1;
 
                 if (generateSqlFormat)
@@ -75,12 +113,13 @@ namespace GeneratorSQL
                 }
                 else
                 {
-                    outputBuilder.AppendLine(); // Простой перенос строки для списка данных
+                    outputBuilder.AppendLine();
                 }
             }
 
             SqlOutputTextBox.Text = outputBuilder.ToString();
         }
+
 
 
 
@@ -111,7 +150,7 @@ namespace GeneratorSQL
 
         private string GenerateRandomCountry()
         {
-            string[] countries = { "United States", "Canada", "Germany", "France", "United Kingdom", "Australia", "Italy", "Spain", "Netherlands", "Sweden" };
+            string[] countries = { "United States", "Canada", "Germany", "France", "United Kingdom", "Australia", "Italy", "Spain", "Netherlands", "Sweden", "Ukraine" };
             return countries[_random.Next(countries.Length)];
         }
 
@@ -147,5 +186,101 @@ namespace GeneratorSQL
                 MessageBox.Show("There is no SQL text to copy.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
+        private string GenerateRandomMiddleName()
+        {
+            string[] middleNames = { "Ivanovich", "Petrovich", "Sergeevich", "Alekseevna", "Nikolaevna", "Dmitrievna" };
+            return middleNames[_random.Next(middleNames.Length)];
+        }
+
+        private string GenerateRandomGender()
+        {
+            string[] genders = { "Male", "Female", "Other" };
+            return genders[_random.Next(genders.Length)];
+        }
+
+        private int GenerateRandomAge(int minAge = 18, int maxAge = 70)
+        {
+            return _random.Next(minAge, maxAge + 1);
+        }
+
+        private DateTime GenerateBirthDateFromAge(int age)
+        {
+            DateTime today = DateTime.Today;
+            DateTime birthDate = today.AddYears(-age).AddDays(-_random.Next(365));
+            return birthDate;
+        }
+
+        private string GenerateRandomCity()
+        {
+            string[] cities = { "New York", "Berlin", "Paris", "Moscow", "Tokyo", "Sydney", "Madrid", "Rome" };
+            return cities[_random.Next(cities.Length)];
+        }
+
+        private string GenerateRandomAddress()
+        {
+            string[] streets = { "Main St", "High St", "Broadway", "Maple Ave", "Elm St", "Oak St", "Pine Ave" };
+            int houseNumber = _random.Next(1, 200);
+            int apartmentNumber = _random.Next(1, 50);
+            return $"{houseNumber} {streets[_random.Next(streets.Length)]}, Apt {apartmentNumber}";
+        }
+
+        private string GenerateRandomPhoneNumber()
+        {
+            return $"+{_random.Next(1, 999)}-{_random.Next(100, 999)}-{_random.Next(1000, 9999)}";
+        }
+
+        private string GenerateRandomProfession()
+        {
+            string[] professions = { "Engineer", "Teacher", "Doctor", "Lawyer", "Artist", "Scientist", "Writer", "Chef" };
+            return professions[_random.Next(professions.Length)];
+        }
+
+        private string GenerateRandomCompany()
+        {
+            string[] companies = { "TechCorp", "HealthPlus", "EduSolve", "Financo", "BuildIt", "Creativa" };
+            return companies[_random.Next(companies.Length)];
+        }
+
+        private string GenerateRandomStatus()
+        {
+            string[] statuses = { "Active", "On Probation", "Dismissed" };
+            return statuses[_random.Next(statuses.Length)];
+        }
+
+        private string GenerateRandomEducationLevel()
+        {
+            string[] educationLevels = { "High School", "Bachelor", "Master", "PhD" };
+            return educationLevels[_random.Next(educationLevels.Length)];
+        }
+
+        private string GenerateRandomHobby()
+        {
+            string[] hobbies = { "Sports", "Reading", "Traveling", "Cooking", "Gaming", "Photography" };
+            return hobbies[_random.Next(hobbies.Length)];
+        }
+
+        private string GenerateRandomRelationshipStatus()
+        {
+            string[] relationshipStatuses = { "Single", "Married", "Divorced" };
+            return relationshipStatuses[_random.Next(relationshipStatuses.Length)];
+        }
+
+        private string GenerateRandomIPAddress()
+        {
+            return $"{_random.Next(1, 255)}.{_random.Next(1, 255)}.{_random.Next(1, 255)}.{_random.Next(1, 255)}";
+        }
+
+        private string GenerateRandomUserCategory()
+        {
+            string[] categories = { "VIP", "New Customer", "Returning Customer" };
+            return categories[_random.Next(categories.Length)];
+        }
+
+        private int GenerateRandomRating()
+        {
+            return _random.Next(1, 6); // Rating from 1 to 5
+        }
+
     }
 }
