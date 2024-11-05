@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,11 +9,29 @@ namespace GeneratorSQL
     public partial class MainWindow : Window
     {
         private readonly Random _random = new Random(); // Single instance of Random for consistency
+        private List<CheckBox> _selectedCheckboxesOrder = new List<CheckBox>();
+
 
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox checkBox = sender as CheckBox;
+            if (!_selectedCheckboxesOrder.Contains(checkBox))
+            {
+                _selectedCheckboxesOrder.Add(checkBox);
+            }
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            CheckBox checkBox = sender as CheckBox;
+            _selectedCheckboxesOrder.Remove(checkBox);
+        }
+
 
         private void OnGenerateSqlClick(object sender, RoutedEventArgs e)
         {
@@ -45,65 +64,68 @@ namespace GeneratorSQL
                     outputBuilder.Append("(");
                 }
 
-                if (GenerateIDCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{i + 1}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateNameCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomName()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateSurnameCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomSurname()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateMiddleNameCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomMiddleName()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateGenderCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomGender()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateAgeCheckBox.IsChecked == true)
+                foreach (var checkBox in _selectedCheckboxesOrder)
                 {
-                    int age = GenerateRandomAge();
-                    outputBuilder.Append($"{age}{(includeCommas ? ", " : " ")}");
+                    if (checkBox == GenerateIDCheckBox && GenerateIDCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{i + 1}{(includeCommas ? ", " : " ")}");
 
-                    if (GenerateBirthDateCheckBox.IsChecked == true)
-                        outputBuilder.Append($"{quote}{GenerateBirthDateFromAge(age):yyyy-MM-dd}{quote}{(includeCommas ? ", " : " ")}");
+                    if (checkBox == GenerateNameCheckBox && GenerateNameCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomName()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateSurnameCheckBox && GenerateSurnameCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomSurname()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateMiddleNameCheckBox && GenerateMiddleNameCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomMiddleName()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateGenderCheckBox && GenerateGenderCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomGender()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateAgeCheckBox && GenerateAgeCheckBox.IsChecked == true)
+                    {
+                        int age = GenerateRandomAge();
+                        outputBuilder.Append($"{age}{(includeCommas ? ", " : " ")}");
+
+                        if (GenerateBirthDateCheckBox.IsChecked == true)
+                            outputBuilder.Append($"{quote}{GenerateBirthDateFromAge(age):yyyy-MM-dd}{quote}{(includeCommas ? ", " : " ")}");
+                    }
+
+                    if (checkBox == GenerateCityCheckBox && GenerateCityCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomCity()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateAddressCheckBox && GenerateAddressCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomAddress()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GeneratePhoneNumberCheckBox && GeneratePhoneNumberCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomPhoneNumber()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateProfessionCheckBox && GenerateProfessionCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomProfession()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateCompanyCheckBox && GenerateCompanyCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomCompany()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateStatusCheckBox && GenerateStatusCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomStatus()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateEducationLevelCheckBox && GenerateEducationLevelCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomEducationLevel()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateHobbyCheckBox && GenerateHobbyCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomHobby()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateRelationshipStatusCheckBox && GenerateRelationshipStatusCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomRelationshipStatus()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateIPAddressCheckBox && GenerateIPAddressCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomIPAddress()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateUserCategoryCheckBox && GenerateUserCategoryCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{quote}{GenerateRandomUserCategory()}{quote}{(includeCommas ? ", " : " ")}");
+
+                    if (checkBox == GenerateRatingCheckBox && GenerateRatingCheckBox.IsChecked == true)
+                        outputBuilder.Append($"{GenerateRandomRating()}{(includeCommas ? ", " : " ")}");
                 }
-
-                if (GenerateCityCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomCity()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateAddressCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomAddress()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GeneratePhoneNumberCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomPhoneNumber()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateProfessionCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomProfession()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateCompanyCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomCompany()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateStatusCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomStatus()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateEducationLevelCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomEducationLevel()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateHobbyCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomHobby()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateRelationshipStatusCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomRelationshipStatus()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateIPAddressCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomIPAddress()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateUserCategoryCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{quote}{GenerateRandomUserCategory()}{quote}{(includeCommas ? ", " : " ")}");
-
-                if (GenerateRatingCheckBox.IsChecked == true)
-                    outputBuilder.Append($"{GenerateRandomRating()}{(includeCommas ? ", " : " ")}");
 
                 outputBuilder.Length -= includeCommas ? 2 : 1;
 
@@ -213,7 +235,7 @@ namespace GeneratorSQL
 
         private string GenerateRandomCity()
         {
-            string[] cities = { "New York", "Berlin", "Paris", "Moscow", "Tokyo", "Sydney", "Madrid", "Rome" };
+            string[] cities = { "New York", "Berlin", "Paris", "Tokyo", "Sydney", "Madrid", "Rome", "Dnipro", "London", "Odesa", "Kyiv" };
             return cities[_random.Next(cities.Length)];
         }
 

@@ -31,14 +31,14 @@
                 <StackPanel Orientation="Vertical">
                     <!-- First Row -->
                     <StackPanel Orientation="Horizontal" Margin="0,10,0,5">
-                        <CheckBox x:Name="GenerateIDCheckBox" Content="ID" Margin="0,0,10,0"/>
-                        <CheckBox x:Name="GenerateNameCheckBox" Content="First Name" Margin="0,0,10,0"/>
-                        <CheckBox x:Name="GenerateMiddleNameCheckBox" Content="Middle Name" Margin="0,0,10,0"/>
-                        <CheckBox x:Name="GenerateSurnameCheckBox" Content="Last Name" Margin="0,0,10,0"/>
-                        <CheckBox x:Name="GenerateGenderCheckBox" Content="Gender" Margin="0,0,10,0"/>
-                        <CheckBox x:Name="GenerateAgeCheckBox" Content="Age" Margin="0,0,10,0"/>
-                        <CheckBox x:Name="GenerateBirthDateCheckBox" Content="Birth Date" Margin="0,0,10,0"/>
-                        <CheckBox x:Name="GenerateCityCheckBox" Content="City" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateIDCheckBox" Content="ID" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateNameCheckBox" Content="First Name" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateMiddleNameCheckBox" Content="Middle Name" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateSurnameCheckBox" Content="Last Name" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateGenderCheckBox" Content="Gender" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateAgeCheckBox" Content="Age" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateBirthDateCheckBox" Content="Birth Date" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateCityCheckBox" Content="City" Margin="0,0,10,0"/>
                     </StackPanel>
 
                     <!-- Second Row -->
