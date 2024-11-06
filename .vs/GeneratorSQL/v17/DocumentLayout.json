@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "E:\\GeneratorSQL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "GeneratorSQL\\MainWindow.xaml.cs",
               "ToolTip": "E:\\GeneratorSQL\\GeneratorSQL\\MainWindow.xaml.cs",
               "RelativeToolTip": "GeneratorSQL\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAQwI4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T09:30:16.243Z",
               "EditorCaption": ""
