@@ -187,8 +187,13 @@ namespace GeneratorSQL
 
         private string GenerateRandomEmail()
         {
-            string[] domains = { "@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com" };
-            string[] emailPrefixes = { "user", "contact", "admin", "support", "info" };
+            string[] domains = {"@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com", "@icloud.com", "@aol.com", "@protonmail.com", "@zoho.com", "@gmx.com", "@fastmail.com", "@hushmail.com", "@inbox.com", "@live.com", "@msn.com", "@yahoo.co.uk", "@yahoo.fr", "@yahoo.de", "@yahoo.es", "@tutanota.com", "@rediffmail.com", "@qq.com", "@web.de", "@rocketmail.com" };
+            string[] emailPrefixes = {
+    "user", "contact", "admin", "support", "info", "sales", "service", "no-reply", "team", "hello",
+    "office", "mail", "newsletter", "customer", "staff", "billing", "help", "hr", "recruitment",
+    "marketing", "press", "career", "feedback", "orders", "account", "tech"
+};
+
             return $"{emailPrefixes[_random.Next(emailPrefixes.Length)]}{_random.Next(100, 999)}{domains[_random.Next(domains.Length)]}";
         }
 

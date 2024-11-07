@@ -50,7 +50,6 @@
                         <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateStatusCheckBox" Content="Status" Margin="0,0,10,0"/>
                         <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateEducationLevelCheckBox" Content="Education Level" Margin="0,0,10,0"/>
                         <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateHobbyCheckBox" Content="Hobby" Margin="0,0,10,0"/>
-                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateRelationshipStatusCheckBox" Content="Relationship Status" Margin="0,0,10,0"/>
                     </StackPanel>
 
                     <!-- Third Row -->
@@ -61,6 +60,7 @@
                         <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateIPAddressCheckBox" Content="IP Address" Margin="0,0,10,0"/>
                         <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateUserCategoryCheckBox" Content="User Category" Margin="0,0,10,0"/>
                         <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateRatingCheckBox" Content="Rating" Margin="0,0,10,0"/>
+                        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" x:Name="GenerateRelationshipStatusCheckBox" Content="Relationship Status" Margin="0,0,10,0"/>
                         
                     </StackPanel>
                     <CheckBox x:Name="IncludeCommasCheckBox" Content="Comma" Margin="0,10,0,0"/>
