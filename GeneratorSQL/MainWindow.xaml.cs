@@ -123,7 +123,7 @@ namespace GeneratorSQL
                         valueToAdd = $"{quote}{GenerateRandomEmail()}{quote}";
                     //BALANCE 3
                     if (checkBox == GenerateBalanceCheckBox && GenerateBalanceCheckBox.IsChecked == true)
-                        valueToAdd = $"{GenerateRandomBalance():0.00}";
+                        valueToAdd = $"{GenerateRandomBalance():0}";
                     //RATING 3
                     if (checkBox == GenerateRatingCheckBox && GenerateRatingCheckBox.IsChecked == true)
                         valueToAdd = $"{quote}{GenerateRandomRating()}{quote}";
@@ -205,7 +205,7 @@ namespace GeneratorSQL
 
         private decimal GenerateRandomBalance()
         {
-            return Math.Round((decimal)(_random.Next(1000, 10000) + _random.NextDouble()), 2);
+            return Math.Round((decimal)(_random.Next(1000, 10000) + _random.NextDouble()), 0);
         }
 
         private void TableNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
