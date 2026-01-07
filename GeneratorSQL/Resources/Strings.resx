@@ -74,13 +74,13 @@
   
   <!-- Buttons -->
   <data name="GenerateButton" xml:space="preserve">
-    <value>🔄 Generate SQL</value>
+    <value>Generate SQL</value>
   </data>
   <data name="CopyButton" xml:space="preserve">
-    <value>📋 Copy to Clipboard</value>
+    <value>Copy to Clipboard</value>
   </data>
   <data name="ClearButton" xml:space="preserve">
-    <value>🗑️ Clear</value>
+    <value>Clear</value>
   </data>
   
   <!-- Status Messages -->

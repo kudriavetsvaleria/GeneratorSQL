@@ -86,6 +86,11 @@
     <Compile Include="Models\GeneratorField.cs" />
     <Compile Include="Models\GenerationConfig.cs" />
     <Compile Include="Models\ExportResult.cs" />
+    <Compile Include="Resources\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Services\Interfaces\IDataGeneratorService.cs" />
     <Compile Include="Services\Interfaces\ISqlExportService.cs" />
@@ -115,6 +120,7 @@
     <EmbeddedResource Include="Resources\Strings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Strings.uk.resx" />
   </ItemGroup>

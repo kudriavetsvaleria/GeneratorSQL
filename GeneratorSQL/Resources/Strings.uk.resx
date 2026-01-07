@@ -74,13 +74,13 @@
   
   <!-- Buttons -->
   <data name="GenerateButton" xml:space="preserve">
-    <value>🔄 Згенерувати SQL</value>
+    <value>Згенерувати SQL</value>
   </data>
   <data name="CopyButton" xml:space="preserve">
-    <value>📋 Копіювати</value>
+    <value>Копіювати</value>
   </data>
   <data name="ClearButton" xml:space="preserve">
-    <value>🗑️ Очистити</value>
+    <value>Очистити</value>
   </data>
   
   <!-- Status Messages -->
