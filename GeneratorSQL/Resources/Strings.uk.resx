@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  <!-- Window Title -->
+  <data name="WindowTitle" xml:space="preserve">
+    <value>SQL Генератор Даних - Розширена версія</value>
+  </data>
+  
+  <!-- Configuration Section -->
+  <data name="ConfigurationHeader" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="TableName" xml:space="preserve">
+    <value>Назва таблиці:</value>
+  </data>
+  <data name="SqlDialect" xml:space="preserve">
+    <value>SQL діалект:</value>
+  </data>
+  <data name="Columns" xml:space="preserve">
+    <value>Стовпці:</value>
+  </data>
+  <data name="ColumnsTooltip" xml:space="preserve">
+    <value>Введіть назви стовпців через кому (напр., id, name, email)</value>
+  </data>
+  <data name="RowCount" xml:space="preserve">
+    <value>Кількість рядків:</value>
+  </data>
+  <data name="UseDoubleQuotes" xml:space="preserve">
+    <value>Подвійні лапки</value>
+  </data>
+  <data name="IncludeCommas" xml:space="preserve">
+    <value>З комами</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Мова:</value>
+  </data>
+  
+  <!-- Field Selection -->
+  <data name="SelectFields" xml:space="preserve">
+    <value>Оберіть поля для генерації</value>
+  </data>
+  
+  <!-- Buttons -->
+  <data name="GenerateButton" xml:space="preserve">
+    <value>🔄 Згенерувати SQL</value>
+  </data>
+  <data name="CopyButton" xml:space="preserve">
+    <value>📋 Копіювати</value>
+  </data>
+  <data name="ClearButton" xml:space="preserve">
+    <value>🗑️ Очистити</value>
+  </data>
+  
+  <!-- Status Messages -->
+  <data name="Ready" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Generating" xml:space="preserve">
+    <value>Генерація...</value>
+  </data>
+  <data name="GeneratedRows" xml:space="preserve">
+    <value>Згенеровано {0} рядків за {1}мс</value>
+  </data>
+  <data name="CopiedToClipboard" xml:space="preserve">
+    <value>Скопійовано в буфер обміну!</value>
+  </data>
+  <data name="TimeLabel" xml:space="preserve">
+    <value>Час:</value>
+  </data>
+  <data name="MillisecondsLabel" xml:space="preserve">
+    <value>мс</value>
+  </data>
+  
+  <!-- Messages -->
+  <data name="CopySuccess" xml:space="preserve">
+    <value>SQL текст скопійовано в буфер обміну!</value>
+  </data>
+  <data name="CopyError" xml:space="preserve">
+    <value>Помилка копіювання: {0}</value>
+  </data>
+  <data name="GenerationError" xml:space="preserve">
+    <value>Помилка генерації: {0}</value>
+  </data>
+  <data name="SuccessTitle" xml:space="preserve">
+    <value>Успішно</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Помилка</value>
+  </data>
+  <!-- Field Names -->
+  <data name="Field_ID" xml:space="preserve"><value>ID</value></data>
+  <data name="Field_GUID" xml:space="preserve"><value>GUID</value></data>
+  <data name="Field_FirstName" xml:space="preserve"><value>Ім'я</value></data>
+  <data name="Field_LastName" xml:space="preserve"><value>Прізвище</value></data>
+  <data name="Field_MiddleName" xml:space="preserve"><value>По-батькові</value></data>
+  <data name="Field_FullName" xml:space="preserve"><value>ПІБ</value></data>
+  <data name="Field_Gender" xml:space="preserve"><value>Стать</value></data>
+  <data name="Field_Age" xml:space="preserve"><value>Вік</value></data>
+  <data name="Field_BirthDate" xml:space="preserve"><value>Дата народження</value></data>
+  <data name="Field_Email" xml:space="preserve"><value>Email</value></data>
+  <data name="Field_PhoneNumber" xml:space="preserve"><value>Номер телефону</value></data>
+  <data name="Field_Username" xml:space="preserve"><value>Ім'я користувача</value></data>
+  <data name="Field_Country" xml:space="preserve"><value>Країна</value></data>
+  <data name="Field_City" xml:space="preserve"><value>Місто</value></data>
+  <data name="Field_Address" xml:space="preserve"><value>Адреса</value></data>
+  <data name="Field_ZipCode" xml:space="preserve"><value>Поштовий індекс</value></data>
+  <data name="Field_JobTitle" xml:space="preserve"><value>Посада</value></data>
+  <data name="Field_Company" xml:space="preserve"><value>Компанія</value></data>
+  <data name="Field_Department" xml:space="preserve"><value>Відділ</value></data>
+  <data name="Field_Status" xml:space="preserve"><value>Статус</value></data>
+  <data name="Field_EducationLevel" xml:space="preserve"><value>Рівень освіти</value></data>
+  <data name="Field_Balance" xml:space="preserve"><value>Баланс</value></data>
+  <data name="Field_CreditCard" xml:space="preserve"><value>Кредитна картка</value></data>
+  <data name="Field_IBAN" xml:space="preserve"><value>IBAN</value></data>
+  <data name="Field_IPAddress" xml:space="preserve"><value>IP Адреса</value></data>
+  <data name="Field_MACAddress" xml:space="preserve"><value>MAC Адреса</value></data>
+  <data name="Field_URL" xml:space="preserve"><value>URL</value></data>
+  <data name="Field_UserAgent" xml:space="preserve"><value>User Agent</value></data>
+  <data name="Field_Hobby" xml:space="preserve"><value>Хобі</value></data>
+  <data name="Field_RelationshipStatus" xml:space="preserve"><value>Сімейний стан</value></data>
+  <data name="Field_UserCategory" xml:space="preserve"><value>Категорія користувача</value></data>
+  <data name="Field_Rating" xml:space="preserve"><value>Рейтинг</value></data>
+  <data name="Field_Description" xml:space="preserve"><value>Опис</value></data>
+  <data name="Field_ProductName" xml:space="preserve"><value>Назва продукту</value></data>
+</root>

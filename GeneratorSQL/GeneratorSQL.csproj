@@ -14,6 +14,7 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,22 +52,71 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Bogus" Version="35.6.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\Light.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Dark.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\ViewModelBase.cs" />
+    <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="Core\AsyncRelayCommand.cs" />
+    <Compile Include="Models\Enums\FieldType.cs" />
+    <Compile Include="Models\Enums\FieldCategory.cs" />
+    <Compile Include="Models\Enums\SqlDialect.cs" />
+    <Compile Include="Models\Enums\ExportFormat.cs" />
+    <Compile Include="Models\GeneratorField.cs" />
+    <Compile Include="Models\GenerationConfig.cs" />
+    <Compile Include="Models\ExportResult.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Services\Interfaces\IDataGeneratorService.cs" />
+    <Compile Include="Services\Interfaces\ISqlExportService.cs" />
+    <Compile Include="Services\Interfaces\IClipboardService.cs" />
+    <Compile Include="Services\Interfaces\IExportService.cs" />
+    <Compile Include="Services\Implementations\BogusDataGeneratorService.cs" />
+    <Compile Include="Services\Implementations\SqlExportService.cs" />
+    <Compile Include="Services\Implementations\ClipboardService.cs" />
+    <Compile Include="Services\Implementations\JsonExportService.cs" />
+    <Compile Include="Services\Implementations\CsvExportService.cs" />
+    <Compile Include="Services\Implementations\XmlExportService.cs" />
+    <Compile Include="Services\Implementations\ThemeService.cs" />
+    <Compile Include="Services\LocalizationManager.cs" />
+    <Compile Include="Helpers\Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Helpers\Converters\LocaleConverters.cs" />
+    <Compile Include="Services\Interfaces\IThemeService.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.uk.resx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
