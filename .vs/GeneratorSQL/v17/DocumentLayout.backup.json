@@ -3,35 +3,42 @@
   "WorkspaceRootPath": "E:\\GeneratorSQL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\themes\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\themes\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\themes\\light.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\gs_logo.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\gs_logo.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|GeneratorSQL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\themes\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\themes\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\themes\\light.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\themes\\light.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\resources\\strings.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\resources\\strings.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\resources\\strings.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\services\\interfaces\\iclipboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\services\\interfaces\\iclipboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\services\\interfaces\\iclipboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|e:\\generatorsql\\generatorsql\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|E:\\GeneratorSQL\\generatorsql\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89A2BFB4-C586-4DC4-A440-BE952F947BA2}|GeneratorSQL\\GeneratorSQL.csproj|solutionrelative:generatorsql\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -63,6 +70,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GS_Logo.ico - Icon [256x256, 32 bit, PNG]",
+              "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\GS_Logo.ico",
+              "RelativeDocumentMoniker": "GeneratorSQL\\GS_Logo.ico",
+              "ToolTip": "E:\\GeneratorSQL\\GeneratorSQL\\GS_Logo.ico - Icon [256x256, 32 bit, PNG]",
+              "RelativeToolTip": "GeneratorSQL\\GS_Logo.ico - Icon [256x256, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2026-01-08T10:49:51.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GeneratorSQL",
+              "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\GeneratorSQL.csproj",
+              "RelativeDocumentMoniker": "GeneratorSQL\\GeneratorSQL.csproj",
+              "ToolTip": "E:\\GeneratorSQL\\GeneratorSQL\\GeneratorSQL.csproj",
+              "RelativeToolTip": "GeneratorSQL\\GeneratorSQL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-08T10:28:02.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GeneratorSQL\\Views\\MainWindow.xaml.cs",
@@ -70,12 +99,11 @@
               "RelativeToolTip": "GeneratorSQL\\Views\\MainWindow.xaml.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAnwD4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T19:11:13.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T19:11:13.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GeneratorSQL\\Views\\MainWindow.xaml",
@@ -87,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Strings.resx",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\Resources\\Strings.resx",
               "RelativeDocumentMoniker": "GeneratorSQL\\Resources\\Strings.resx",
@@ -95,24 +123,22 @@
               "RelativeToolTip": "GeneratorSQL\\Resources\\Strings.resx",
               "ViewState": "AgIAAFoAAAAAAAAAAAAkwFgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-01-07T19:11:51.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T19:11:51.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Dark.xaml",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\Themes\\Dark.xaml",
               "RelativeDocumentMoniker": "GeneratorSQL\\Themes\\Dark.xaml",
               "ToolTip": "E:\\GeneratorSQL\\GeneratorSQL\\Themes\\Dark.xaml",
               "RelativeToolTip": "GeneratorSQL\\Themes\\Dark.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-07T15:33:09.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T15:33:09.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "GeneratorSQL\\Properties\\AssemblyInfo.cs",
@@ -120,12 +146,11 @@
               "RelativeToolTip": "GeneratorSQL\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T19:11:47.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T19:11:47.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Light.xaml",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\Themes\\Light.xaml",
               "RelativeDocumentMoniker": "GeneratorSQL\\Themes\\Light.xaml",
@@ -137,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IClipboardService.cs",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\Services\\Interfaces\\IClipboardService.cs",
               "RelativeDocumentMoniker": "GeneratorSQL\\Services\\Interfaces\\IClipboardService.cs",
@@ -145,25 +170,23 @@
               "RelativeToolTip": "GeneratorSQL\\Services\\Interfaces\\IClipboardService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T19:11:49.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T19:11:49.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "GeneratorSQL\\ViewModels\\MainViewModel.cs",
               "ToolTip": "E:\\GeneratorSQL\\GeneratorSQL\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "GeneratorSQL\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAowDIBAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABYBAAAAAAAAAAAowCoBAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T19:11:10.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T19:11:10.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GeneratorSQL\\MainWindow.xaml.cs",
@@ -174,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GeneratorSQL\\MainWindow.xaml",
@@ -186,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "App.xaml",
               "DocumentMoniker": "E:\\GeneratorSQL\\GeneratorSQL\\App.xaml",
               "RelativeDocumentMoniker": "GeneratorSQL\\App.xaml",

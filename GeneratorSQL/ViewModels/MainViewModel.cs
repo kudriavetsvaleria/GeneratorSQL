@@ -37,6 +37,7 @@ namespace GeneratorSQL.ViewModels
         private string _currentLocale;
         private string _fieldSearchText;
         private bool _isDarkTheme;
+        private int _selectionCounter = 0;
 
         private ICollectionView _fieldsView;
 
@@ -355,6 +356,30 @@ namespace GeneratorSQL.ViewModels
                 new GeneratorField("MAC Address", FieldType.MACAddress, FieldCategory.Technology) { ResourceKey = "Field_MACAddress" },
                 new GeneratorField("URL", FieldType.URL, FieldCategory.Technology) { ResourceKey = "Field_URL" },
                 new GeneratorField("User Agent", FieldType.UserAgent, FieldCategory.Technology) { ResourceKey = "Field_UserAgent" },
+                new GeneratorField("File Name", FieldType.FileName, FieldCategory.Technology) { ResourceKey = "Field_FileName" },
+                new GeneratorField("MIME Type", FieldType.MimeType, FieldCategory.Technology) { ResourceKey = "Field_MimeType" },
+                new GeneratorField("App Version", FieldType.AppVersion, FieldCategory.Technology) { ResourceKey = "Field_AppVersion" },
+
+                // Vehicle
+                new GeneratorField("Manufacturer", FieldType.VehicleManufacturer, FieldCategory.Vehicle) { ResourceKey = "Field_VehicleManufacturer" },
+                new GeneratorField("Model", FieldType.VehicleModel, FieldCategory.Vehicle) { ResourceKey = "Field_VehicleModel" },
+                new GeneratorField("Fuel Type", FieldType.VehicleFuel, FieldCategory.Vehicle) { ResourceKey = "Field_VehicleFuel" },
+                new GeneratorField("VIN", FieldType.VehicleVin, FieldCategory.Vehicle) { ResourceKey = "Field_VehicleVin" },
+
+                // Media
+                new GeneratorField("Genre", FieldType.Genre, FieldCategory.Media) { ResourceKey = "Field_Genre" },
+
+                // Electronics
+                new GeneratorField("Product", FieldType.ElectronicsProduct, FieldCategory.Electronics) { ResourceKey = "Field_ElectronicsProduct" },
+                new GeneratorField("Phone Model", FieldType.PhoneModel, FieldCategory.Electronics) { ResourceKey = "Field_PhoneModel" },
+
+                // Clothing
+                new GeneratorField("Clothing Item", FieldType.ClothingItem, FieldCategory.Clothing) { ResourceKey = "Field_ClothingItem" },
+                new GeneratorField("Size", FieldType.ClothingSize, FieldCategory.Clothing) { ResourceKey = "Field_ClothingSize" },
+
+                // Food
+                new GeneratorField("Dish", FieldType.DishName, FieldCategory.Food) { ResourceKey = "Field_DishName" },
+                new GeneratorField("Drink", FieldType.Drink, FieldCategory.Food) { ResourceKey = "Field_Drink" },
 
                 // Miscellaneous
                 new GeneratorField("Hobby", FieldType.Hobby, FieldCategory.Miscellaneous) { ResourceKey = "Field_Hobby" },
@@ -376,20 +401,20 @@ namespace GeneratorSQL.ViewModels
                 {
                     if (e.PropertyName == nameof(GeneratorField.IsSelected))
                     {
-                        UpdateFieldOrders();
+                        var changedField = (GeneratorField)s;
+                        if (changedField.IsSelected)
+                        {
+                            changedField.Order = _selectionCounter++;
+                        }
+                        else
+                        {
+                            changedField.Order = -1;
+                        }
+                        
                         GenerateCommand.RaiseCanExecuteChanged();
                         UpdateColumnsText();
                     }
                 };
-            }
-        }
-
-        private void UpdateFieldOrders()
-        {
-            var selectedFields = AvailableFields.Where(f => f.IsSelected).ToList();
-            for (int i = 0; i < selectedFields.Count; i++)
-            {
-                selectedFields[i].Order = i;
             }
         }
 

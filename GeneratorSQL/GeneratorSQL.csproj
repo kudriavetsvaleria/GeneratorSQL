@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GS_Logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -106,6 +109,7 @@
     <Compile Include="Services\LocalizationManager.cs" />
     <Compile Include="Helpers\Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Helpers\Converters\LocaleConverters.cs" />
+    <Compile Include="Helpers\Converters\CategoryHeaderConverter.cs" />
     <Compile Include="Services\Interfaces\IThemeService.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -149,6 +153,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GS_Logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

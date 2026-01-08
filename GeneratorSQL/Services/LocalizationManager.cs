@@ -24,7 +24,10 @@ namespace GeneratorSQL.Services
             _currentCulture = new CultureInfo(cultureCode);
             // Notify that all properties have changed
             OnPropertyChanged(string.Empty);
+            OnPropertyChanged(nameof(CurrentCultureCode));
         }
+
+        public string CurrentCultureCode => _currentCulture.Name;
 
         public string this[string key]
         {

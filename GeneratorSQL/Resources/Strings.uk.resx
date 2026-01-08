@@ -154,4 +154,36 @@
   <data name="Field_Rating" xml:space="preserve"><value>Рейтинг</value></data>
   <data name="Field_Description" xml:space="preserve"><value>Опис</value></data>
   <data name="Field_ProductName" xml:space="preserve"><value>Назва продукту</value></data>
+  
+  <!-- New Fields -->
+  <data name="Field_VehicleManufacturer" xml:space="preserve"><value>Виробник</value></data>
+  <data name="Field_VehicleModel" xml:space="preserve"><value>Модель</value></data>
+  <data name="Field_VehicleFuel" xml:space="preserve"><value>Тип пального</value></data>
+  <data name="Field_VehicleVin" xml:space="preserve"><value>VIN-код</value></data>
+  <data name="Field_Genre" xml:space="preserve"><value>Жанр</value></data>
+  <data name="Field_FileName" xml:space="preserve"><value>Ім'я файлу</value></data>
+  <data name="Field_MimeType" xml:space="preserve"><value>MIME-тип</value></data>
+  <data name="Field_AppVersion" xml:space="preserve"><value>Версія програми</value></data>
+  
+  <data name="Field_ElectronicsProduct" xml:space="preserve"><value>Товар</value></data>
+  <data name="Field_PhoneModel" xml:space="preserve"><value>Модель телефону</value></data>
+  <data name="Field_ClothingItem" xml:space="preserve"><value>Одяг</value></data>
+  <data name="Field_ClothingSize" xml:space="preserve"><value>Розмір</value></data>
+  <data name="Field_DishName" xml:space="preserve"><value>Страва</value></data>
+  <data name="Field_Drink" xml:space="preserve"><value>Напій</value></data>
+
+  <!-- Categories -->
+  <data name="Category_Identifiers" xml:space="preserve"><value>Ідентифікатори</value></data>
+  <data name="Category_Personal" xml:space="preserve"><value>Персональні дані</value></data>
+  <data name="Category_Contact" xml:space="preserve"><value>Контакти</value></data>
+  <data name="Category_Location" xml:space="preserve"><value>Місцезнаходження</value></data>
+  <data name="Category_Professional" xml:space="preserve"><value>Професійні дані</value></data>
+  <data name="Category_Financial" xml:space="preserve"><value>Фінанси</value></data>
+  <data name="Category_Technology" xml:space="preserve"><value>Технології</value></data>
+  <data name="Category_Vehicle" xml:space="preserve"><value>Транспорт</value></data>
+  <data name="Category_Media" xml:space="preserve"><value>Медіа</value></data>
+  <data name="Category_Electronics" xml:space="preserve"><value>Електроніка</value></data>
+  <data name="Category_Clothing" xml:space="preserve"><value>Одяг</value></data>
+  <data name="Category_Food" xml:space="preserve"><value>Їжа</value></data>
+  <data name="Category_Miscellaneous" xml:space="preserve"><value>Різне</value></data>
 </root>

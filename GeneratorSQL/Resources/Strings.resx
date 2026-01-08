@@ -154,4 +154,36 @@
   <data name="Field_Rating" xml:space="preserve"><value>Rating</value></data>
   <data name="Field_Description" xml:space="preserve"><value>Description</value></data>
   <data name="Field_ProductName" xml:space="preserve"><value>Product Name</value></data>
+  
+  <!-- New Fields -->
+  <data name="Field_VehicleManufacturer" xml:space="preserve"><value>Manufacturer</value></data>
+  <data name="Field_VehicleModel" xml:space="preserve"><value>Model</value></data>
+  <data name="Field_VehicleFuel" xml:space="preserve"><value>Fuel Type</value></data>
+  <data name="Field_VehicleVin" xml:space="preserve"><value>VIN</value></data>
+  <data name="Field_Genre" xml:space="preserve"><value>Genre</value></data>
+  <data name="Field_FileName" xml:space="preserve"><value>File Name</value></data>
+  <data name="Field_MimeType" xml:space="preserve"><value>MIME Type</value></data>
+  <data name="Field_AppVersion" xml:space="preserve"><value>App Version</value></data>
+  
+  <data name="Field_ElectronicsProduct" xml:space="preserve"><value>Product</value></data>
+  <data name="Field_PhoneModel" xml:space="preserve"><value>Phone Model</value></data>
+  <data name="Field_ClothingItem" xml:space="preserve"><value>Clothing Item</value></data>
+  <data name="Field_ClothingSize" xml:space="preserve"><value>Size</value></data>
+  <data name="Field_DishName" xml:space="preserve"><value>Dish</value></data>
+  <data name="Field_Drink" xml:space="preserve"><value>Drink</value></data>
+
+  <!-- Categories -->
+  <data name="Category_Identifiers" xml:space="preserve"><value>Identifiers</value></data>
+  <data name="Category_Personal" xml:space="preserve"><value>Personal</value></data>
+  <data name="Category_Contact" xml:space="preserve"><value>Contact</value></data>
+  <data name="Category_Location" xml:space="preserve"><value>Location</value></data>
+  <data name="Category_Professional" xml:space="preserve"><value>Professional</value></data>
+  <data name="Category_Financial" xml:space="preserve"><value>Financial</value></data>
+  <data name="Category_Technology" xml:space="preserve"><value>Technology</value></data>
+  <data name="Category_Vehicle" xml:space="preserve"><value>Vehicle</value></data>
+  <data name="Category_Media" xml:space="preserve"><value>Media</value></data>
+  <data name="Category_Electronics" xml:space="preserve"><value>Electronics</value></data>
+  <data name="Category_Clothing" xml:space="preserve"><value>Clothing</value></data>
+  <data name="Category_Food" xml:space="preserve"><value>Food</value></data>
+  <data name="Category_Miscellaneous" xml:space="preserve"><value>Miscellaneous</value></data>
 </root>

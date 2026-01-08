@@ -12,6 +12,11 @@ namespace GeneratorSQL.Models.Enums
         Professional,
         Financial,
         Technology,
+        Vehicle,
+        Media,
+        Electronics,
+        Clothing,
+        Food,
         Miscellaneous,
         Custom
     }

@@ -55,6 +55,30 @@ namespace GeneratorSQL.Models.Enums
         URL,
         UserAgent,
         DomainName,
+        FileName,
+        MimeType,
+        AppVersion,
+        
+        // Vehicle
+        VehicleManufacturer,
+        VehicleModel,
+        VehicleFuel,
+        VehicleVin,
+        
+        // Media
+        Genre,
+        
+        // Electronics
+        ElectronicsProduct,
+        PhoneModel,
+
+        // Clothing
+        ClothingItem,
+        ClothingSize,
+
+        // Food
+        DishName,
+        Drink,
         
         // Miscellaneous
         Hobby,
