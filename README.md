@@ -14,6 +14,14 @@ A powerful WPF application for generating realistic test data and exporting it a
 
 ---
 
+## ⬇️ Download (Windows)
+Go to Releases and download the latest installer:
+
+GeneratorSQL_Setup.exe
+After installation, GeneratorSQL will appear in the Start menu and may create a shortcut on your desktop.
+
+---
+
 ## 🚀 Features
 
 ### Data Generation
