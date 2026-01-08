@@ -6,7 +6,7 @@
 
 # GeneratorSQL - Enhanced Test Data Generator
 
-A powerful WPF application for generating realistic test data and exporting it in multiple formats (SQL, JSON, CSV, XML).
+A powerful WPF application for generating realistic test data and exporting it as SQL INSERT statements.
 
 ---
 
@@ -17,32 +17,31 @@ A powerful WPF application for generating realistic test data and exporting it i
 ## 🚀 Features
 
 ### Data Generation
-- **40+ Field Types** including:
-  - Personal: Names, Age, Birth Date, Gender
-  - Contact: Email, Phone, IP Address
-  - Location: Country, City, Address, Coordinates
-  - Professional: Job Title, Company, Department, Education
-  - Financial: Balance, IBAN, Credit Card, Currency
-  - Technology: IPv4/IPv6, MAC Address, URL, User Agent
-  - And many more...
+- **Extensive Field Library**: 50+ field types across multiple categories:
+  - **Personal**: Names (with localization support), Age, Gender, Birth Date.
+  - **Products**: Electronics (Phones, Laptops), Clothing (Items, Sizes), Food (Dishes, Drinks).
+  - **Contact**: Email, Phone, IP Address.
+  - **Location**: Country (Safe list only), City, Address, Coordinates.
+  - **Professional**: Job Title, Company, Department.
+  - **Financial**: Balance, IBAN, Credit Card, Currency.
+  - **Technology**: IPv4/IPv6, MAC Address, URL.
 
-### Multi-Dialect SQL Support
-- ✅ MySQL
-- ✅ PostgreSQL  
-- ✅ SQL Server
-- ✅ Oracle
-- ✅ SQLite
+### SQL Generation
+- **Multi-Dialect Support**:
+  - ✅ MySQL
+  - ✅ PostgreSQL  
+  - ✅ SQL Server
+  - ✅ Oracle
+  - ✅ SQLite
 
-### Export Formats
-- 📄 **SQL** - INSERT statements with dialect-specific formatting
-- 📋 **JSON** - Pretty-printed or compact
-- 📊 **CSV** - With custom delimiters
-- 📁 **XML** - Well-formatted with proper structure
+### Localization
+- **Bilingual UI**: Instant switching between **English (EN)** and **Ukrainian (UA)**.
+- **Smart Data Localization**: Generated data adapts to the selected language (e.g., Ukrainian names and addresses).
 
-### Advanced Features
-- **Bogus Library Integration** - Professional, realistic test data
-- **Locale Support** - Including Russian and Ukrainian names/addresses
-- **MVVM Architecture** - Clean, testable, maintainable code
-- **Async Generation** - Responsive UI for large datasets
-- **Reproducible Results** - Seed-based generation
 
+### Technical Capabilities
+- **Reactive MVVM Architecture**: Built with modern WPF practices for reliability and testability.
+- **Bogus Library Integration**: High-performance generation of millions of rows.
+- **Dynamic UI**: Category headers and field names translate instantly without restarting the app.
+- **Theming**: Built-in Dark and Light themes.
+- **Async Processing**: responsive UI even during large dataset generation.
